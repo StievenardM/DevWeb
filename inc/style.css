@@ -1,0 +1,195 @@
+body {
+	background-color: #791CF8;
+	color: white;
+}
+
+.barCon {
+	background-color: orange;
+	text-align: right;
+}
+
+table {
+	text-align: center;
+	width: 700px;
+	margin: auto;
+	background-color: #ADC5AF;
+	color: darkblue;
+}
+
+fieldset {
+	margin: auto;
+	width: 800px;
+	background-color: orange;
+}
+
+fieldset a {
+	color: white;
+}
+
+#manage {
+	text-align: center;
+}
+
+.pochette {
+	width: 150px;
+    height: 180px;
+}
+
+th {
+	background-color: green;
+	color: yellow;
+}
+
+a {
+	text-decoration: none;
+	color: darkblue;
+}
+
+#nav, #nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#nav ul li {
+    display: inherit;
+    border-radius: 0;
+}
+
+#nav ul li:hover {
+    border-radius: 0;
+}
+
+#nav ul li:last-child {
+    border-radius: 0px 0px 8px 8px;
+}
+
+#nav ul {
+    position: absolute;
+    z-index: 1000;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+
+#nav li:hover ul {
+    max-height: 15em;
+}
+
+#nav li:first-child {
+    background-color: red;
+    background-image: -webkit-linear-gradient(top, red 0%, #2A2333 100%);
+    background-image: linear-gradient(to bottom, red 0%, #2A2333 100%);
+}
+
+#nav li:nth-child(2) {
+    background-color: blue;
+    background-image: -webkit-linear-gradient(top,blue 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, blue 0%, #333A40 100%);
+}
+
+#nav li:nth-child(3) {
+    background-color: green;
+    background-image: -webkit-linear-gradient(top, green 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, green 0%, #333A40 100%);
+}
+
+#nav li:nth-child(4) {
+    background-color: white;
+    background-image: -webkit-linear-gradient(top, white 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, white 0%, #333A40 100%);
+}
+
+#nav a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 32px;
+    color: #FFFFFF;
+    font-family: arial;
+}
+
+#nav ul a {
+    padding: 8px 0px;
+}
+
+#nav li:hover li a {
+    color: #FFFFFF;
+    text-transform: inherit;
+}
+
+#nav li:hover a, #nav li li:hover a {
+    color: #CC0000;
+}
+
+#client {
+	color: white;
+	float: right;
+}
+
+.search {
+	margin: auto;
+	width: 700px;
+}
+
+#nintendo {
+    margin-right: 20px;
+    float: left;
+}
+
+#sony {
+    margin-right: 20px;
+    float: left;
+}
+
+#microsoft {
+    float: left;
+}
+
+#principale {
+    margin: auto;
+    width: 1250px;
+}
+
+#left img {
+    margin: auto;
+    width: 150px;
+}
+
+#left {
+    background-color: #1385BD;
+    text-align: center;
+    width: 200px;
+    float: left;
+}
+
+#right img {
+    margin: auto;
+    width: 150px;
+}
+
+#right {
+    background-color: green;
+    text-align: center;
+    width: 200px;
+    float: right;
+}
+
+#left h1, #right h1{
+    font-size: 15px;
+}
+
+#consoles input {
+    height: 25px;
+    width: 120px;
+}

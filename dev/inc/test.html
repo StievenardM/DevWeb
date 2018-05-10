@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset = 'utf-8'>
+<title>Vérifier les saisies de formulaire</title>
+<script type="text/javascript">
+<!--
+function verif_formulaire()
+{
+ if(document.formulaire.nom.value == "")  {
+   alert("Veuillez entrer votre nom!");
+   document.formulaire.nom.focus();
+   return false;
+  }
+ if(document.formulaire.mot_de_passe.value == "") {
+   alert("Veuillez entrer votre mot de passe!");
+   document.formulaire.mot_de_passe.focus();
+   return false;
+  }
+ if(document.formulaire.courriel.value == "") {
+   alert("Veuillez mettre l'@!");
+   document.formulaire.courriel.focus();
+   return false;
+  }
+ if(document.formulaire.courriel.value.indexOf('@') == -1) {
+   alert("Veuillez mettre l'@!");
+   document.formulaire.courriel.focus();
+   return false;
+  }
+ if(document.formulaire.age.value == "") {
+   alert("L'age doit être un nombre!");
+   document.formulaire.age.focus();
+   return false;
+  }
+ var chkZ = 1;
+ for(i=0;i<document.formulaire.age.value.length;++i)
+   if(document.formulaire.age.value.charAt(i) < "1"
+   || document.formulaire.age.value.charAt(i) > "99")
+     	 chkZ = -1;
+ if(chkZ == -1) {
+   alert("votre age n'est pas correcte veuillez mettre un nombre !!!");
+       document.formulaire.age.focus();
+   return false;
+  }
+}
+//-->
+</script>
+</head>
+<body bgcolor="#EEEEEE" text="#000000">
+
+<h1>formulaire</h1>
+<p>Les champs avec * sont obligatoires</p>
+<form name="formulaire" action="mailto:votreemail@***.***" method="post" onSubmit="return verif_formulaire()">
+<pre>
+
+Nom:     <input type="text" size="40" name="nom">
+Mot de Passe:  <input type="text" size="40" name="mot_de_passe"> <form>
+Courriel:   <input type="text" size="40" name="courriel">
+Âge:    <input type="text" size="40" name="age">
+
+formulaire: <input type="submit" value="Envoyer"><input type="reset" value="Tout enlever">
+
+Pour envoyer vous devez être connecté à Internet!
+</pre>
+</form>
+
+</body>
+</html> 
