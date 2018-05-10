@@ -6,3 +6,4 @@ Les variables à éditer:   $user = 'michael'
                           $password = 'brutus'
                           $bdd = 'DevWeb'
 Le dump de la base de données nommé DevWeb.sql se trouve à la racine du projet et doit être importé dans une BDD appelée DevWeb
+L'administrateur du site (email: stievenard@gmail.com    Mot de passe: "brutus") est le seul à pouvoir gérer les articles
